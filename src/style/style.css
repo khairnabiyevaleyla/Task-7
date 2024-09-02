@@ -57,14 +57,77 @@ table {
   box-sizing: border-box;
 }
 
+#header .left_nav ul .menu_cur .sub_menu_cur, #header .left_nav ul .menu_lang .sub_menu_lang {
+  transition: 0.5s ease;
+  top: 30px;
+  box-shadow: -2px 1px 20px rgba(134, 134, 134, 0.1);
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+}
+
 #header {
   font-family: "Albert Sans", sans-serif;
 }
 #header .left_nav {
+  font-size: 14px;
+  color: #000000;
   display: flex;
   justify-content: flex-start;
   align-items: start;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 20px;
+}
+#header .left_nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  cursor: pointer;
+}
+#header .left_nav ul img {
+  width: 16px;
+  height: 12px;
+}
+#header .left_nav ul i {
+  font-size: 17px;
+}
+#header .left_nav ul .menu_lang {
+  position: relative;
+}
+#header .left_nav ul .menu_lang:hover .sub_menu_lang {
+  opacity: 1;
+  visibility: visible;
+}
+#header .left_nav ul .menu_lang .sub_menu_lang {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 300px;
+  padding: 17px 10px;
+  left: -30px;
+}
+#header .left_nav ul .menu_cur {
+  position: relative;
+}
+#header .left_nav ul .menu_cur:hover .sub_menu_cur {
+  opacity: 1;
+  visibility: visible;
+}
+#header .left_nav ul .menu_cur .sub_menu_cur {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 13px 15px;
 }/*# sourceMappingURL=style.css.map */

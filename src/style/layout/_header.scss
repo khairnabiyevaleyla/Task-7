@@ -1,6 +1,50 @@
 #header {
     font-family: $default_font;
     .left_nav {
-        @include Flexible (flex-start,start,row,nowrap,10px);
+        font-size: 14px;
+        color: $black_color;
+        @include Flexible (flex-start,start,row,nowrap,20px);
+        ul {
+            @include Flexible (flex-start,start,row,nowrap,20px);
+            cursor: pointer;
+            img {
+                width: 16px;
+                height: 12px;
+            } 
+            i {
+                font-size: 17px;
+            }  
+            .menu_lang {
+                position: relative;
+                &:hover .sub_menu_lang {
+                    opacity: 1;
+                    visibility: visible; 
+
+                }
+                .sub_menu_lang {
+                    position: absolute;
+                    @extend %sub_menu;
+                    @include Flexible (flex-start,start,column,nowrap,20px);
+                    width: 300px;
+                    padding: 17px 10px;
+                    left: -30px;
+                    
+                }
+               
+            }
+            .menu_cur {
+                position: relative; 
+                &:hover  .sub_menu_cur {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .sub_menu_cur {
+                    position: absolute;
+                    @extend %sub_menu;
+                    @include Flexible (flex-start,start,column,nowrap,20px);
+                    padding: 13px 15px;
+                }
+            }
+        }
     }
 }
