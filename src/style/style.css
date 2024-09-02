@@ -66,7 +66,7 @@ table {
   visibility: hidden;
 }
 
-#banner #carouselExampleFade .slide_img img, #header .logo_img img, #header .left_nav ul img {
+#shop_now .shop_card__img img, #banner #carouselExampleFade .slide_img img, #header .logo_img img, #header .left_nav ul img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -323,4 +323,56 @@ table {
 }
 #banner #carouselExampleFade .slide_content_three {
   background-color: #E2EBDE;
+}
+
+#shop_now {
+  font-family: "Albert Sans", sans-serif;
+  color: #ffffff;
+}
+#shop_now .shop_card__img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+#shop_now .shop_card__img img {
+  transition: 0.8s ease-in-out;
+}
+#shop_now .shop_card__img img:hover {
+  transform: scale(1.1);
+}
+#shop_now .shop_card__img__body {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}
+#shop_now .shop_card__img__body h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 400;
+}
+#shop_now .shop_card__img__body p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#shop_now .shop_card__img__body p span {
+  font-weight: 600;
+}
+#shop_now .shop_card__img__btn {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #ffffff;
+  padding: 8px 0;
+}
+#shop_now .shop_card__img__btn:hover {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+#shop_now .shop_card__img__btn i {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
