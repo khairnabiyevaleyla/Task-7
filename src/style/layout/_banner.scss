@@ -1,0 +1,52 @@
+#banner {
+    font-family: $default_font;
+    #carouselExampleFade {
+        height: 750px;
+   .slide_img {
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            img {
+                @extend %base_img;
+            }
+        }
+    .slide_content_one{
+        background-color: #EBE9DE;
+        @include Flexible (center,center,column,nowrap,0);
+        width: 100%;
+        height: 100%;
+        h2 {
+            font-size: 4.5rem;
+            color: $black_color;
+            line-height: 80px;
+        }
+        p {
+            font-size: 20px;
+            color: #545454;
+            margin-top: 20px;
+        }
+        a {
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 15px 30px;
+            color: $black_color;
+            font-weight: 500;
+            display: inline-block;
+            border-radius: 3px;
+            font-size: 18px;
+            i {
+                font-size: 23px;
+                font-weight: 500;
+            }
+        }
+        }
+    .slide_content_two{
+        background-color: #E6E4DE;
+        @extend .slide_content_one;
+        }
+    .slide_content_three{
+        background-color: #E2EBDE;
+        @extend .slide_content_one;
+        }
+    }
+}
