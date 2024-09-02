@@ -196,4 +196,78 @@ table {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0;
+}
+
+#navbar {
+  font-family: "Albert Sans", sans-serif;
+  text-transform: capitalize;
+}
+#navbar .nav_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  cursor: pointer;
+}
+#navbar .nav_menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 480;
+}
+#navbar .nav_menu ul li {
+  position: relative;
+  display: inline-block;
+}
+#navbar .nav_menu ul li::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s ease-in-out;
+}
+#navbar .nav_menu ul li:hover::before {
+  width: 100%;
+}
+#navbar .nav_menu ul li i {
+  font-size: 17px;
+}
+#navbar .nav_menu ul .blog_menu {
+  position: relative;
+}
+#navbar .nav_menu ul .blog_menu:hover .blog_sub {
+  opacity: 1;
+  visibility: visible;
+}
+#navbar .nav_menu ul .blog_menu .blog_sub {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  background-color: #ffffff;
+  box-shadow: -2px 1px 20px rgba(134, 134, 134, 0.1);
+  width: 270px;
+  font-size: 13px;
+  padding: 15px 20px;
+  top: 22px;
+  left: -100px;
+  color: grey;
+  opacity: 0;
+  visibility: hidden;
+}
+#navbar .nav_menu ul .blog_menu .blog_sub li:hover {
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

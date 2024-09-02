@@ -1,0 +1,60 @@
+#navbar {
+    font-family: $default_font;
+    text-transform: capitalize;
+.nav_menu {
+    @include Flexible (center,center,row,nowrap,20px);
+    cursor: pointer;
+    ul {
+        @include Flexible (center,center,row,nowrap,20px); 
+        font-size: 16px;
+        color: $black_color;
+        font-weight: 480;
+        li {
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: $black_color;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s ease-in-out;
+            }
+            &:hover::before {
+                width: 100%;
+            }
+            i {
+                font-size: 17px;
+            }
+        }
+    .blog_menu {
+        position: relative;
+        &:hover .blog_sub {
+            opacity: 1;
+            visibility: visible; 
+        }
+    .blog_sub {
+       position: absolute;
+       @include Flexible (flex-start,start,column,nowrap,20px); 
+       background-color: #ffffff;
+       box-shadow: -2px 1px 20px rgba(134, 134, 134, 0.1);
+       width: 270px;
+       font-size: 13px;
+       padding: 15px 20px;
+       top: 22px;
+       left: -100px;
+       color: grey;
+       opacity: 0;
+       visibility: hidden;
+       li {
+        &:hover {
+            color: $black_color;
+           }
+       }
+    }
+    }
+    }
+}
+}
