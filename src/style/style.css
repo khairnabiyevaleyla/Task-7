@@ -87,6 +87,7 @@ table {
 
 #header {
   font-family: "Albert Sans", sans-serif;
+  border-bottom: 1px solid #EBEBEB;
 }
 #header .left_nav {
   font-size: 14px;
