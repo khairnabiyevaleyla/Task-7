@@ -43,7 +43,8 @@
                     position: absolute;
                     @extend %sub_menu;
                     @include Flexible (flex-start,start,column,nowrap,20px);
-                    padding: 13px 15px;
+                    padding: 18px 15px;
+                    width: 86px;
                 }
             }
         }
@@ -53,6 +54,27 @@
        img {
         @extend %base_img;
         width: 136px;
+       }
+    }
+    .right_nav {
+        @include Flexible (flex-end,center,row,nowrap,14px);
+        color: $black_color;
+        font-weight: 500;
+        font-size: 22px;
+        cursor: pointer;
+       .favorite {
+        position: relative;
+        span {
+            @extend %icon_action;
+            @include Flexible (center,center,row,nowrap,0);
+        }
+       }
+       .shop {
+        position: relative;
+        span {
+            @extend %icon_action;
+            @include Flexible (center,center,row,nowrap,0); 
+        }
        }
     }
 }

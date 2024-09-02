@@ -73,6 +73,18 @@ table {
      object-fit: cover;
 }
 
+#header .right_nav .shop span, #header .right_nav .favorite span {
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  font-size: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  top: -5px;
+  left: 13px;
+}
+
 #header {
   font-family: "Albert Sans", sans-serif;
 }
@@ -136,7 +148,8 @@ table {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 20px;
-  padding: 13px 15px;
+  padding: 18px 15px;
+  width: 86px;
 }
 #header .logo_img {
   display: flex;
@@ -148,4 +161,38 @@ table {
 }
 #header .logo_img img {
   width: 136px;
+}
+#header .right_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 14px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+}
+#header .right_nav .favorite {
+  position: relative;
+}
+#header .right_nav .favorite span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+#header .right_nav .shop {
+  position: relative;
+}
+#header .right_nav .shop span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
 }/*# sourceMappingURL=style.css.map */
