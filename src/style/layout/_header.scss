@@ -1,0 +1,6 @@
+#header {
+    font-family: $default_font;
+    .left_nav {
+        @include Flexible (flex-start,start,row,nowrap,10px);
+    }
+}
