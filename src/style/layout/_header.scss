@@ -10,6 +10,7 @@
             img {
                 width: 16px;
                 height: 12px;
+                @extend %base_img;
             } 
             i {
                 font-size: 17px;
@@ -46,5 +47,12 @@
                 }
             }
         }
+    }
+    .logo_img {
+       @include Flexible (center,center,row,nowrap,0);
+       img {
+        @extend %base_img;
+        width: 136px;
+       }
     }
 }
