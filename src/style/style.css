@@ -66,7 +66,7 @@ table {
   visibility: hidden;
 }
 
-#products .on-sale__img__hover img, #products .on-sale__img img, #products .product_card__img__hover img, #products .product_card__img img, #shop_now .shop_card__img img, #banner #carouselExampleFade .slide_img img, #header .logo_img img, #header .left_nav ul img {
+#campaign_banner .right_side__img img, #products .on-sale__img__hover img, #products .on-sale__img img, #products .product_card__img__hover img, #products .product_card__img img, #shop_now .shop_card__img img, #banner #carouselExampleFade .slide_img img, #header .logo_img img, #header .left_nav ul img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -110,7 +110,7 @@ table {
   font-weight: 400;
 }
 
-#products .on-sale__body .on-sale, #products .on-sale__body span, #products .product_card__body .on-sale, #products .product_card__body span {
+#products .product_card__body .sale, #products .on-sale__body .sale, #products .on-sale__body span, #products .product_card__body .on-sale, #products .product_card__body span {
   font-size: 14px;
   color: #000000;
   font-weight: 600;
@@ -553,11 +553,93 @@ table {
   flex-wrap: nowrap;
   gap: 10px;
 }
-#products .product_card__body .on-sale, #products .on-sale__body .on-sale {
+#products .product_card__body .sale, #products .on-sale__body .sale {
   color: #DB1215;
 }
 #products .product_card__body .price, #products .on-sale__body .price {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5490196078);
   text-decoration: line-through;
+}
+
+#campaign_banner {
+  font-family: "Albert Sans", sans-serif;
+}
+#campaign_banner .left_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  background-color: #E6E4DE;
+  width: 700px;
+  height: 400px;
+}
+#campaign_banner .left_side__content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin-left: 10px;
+}
+#campaign_banner .left_side__content h2 {
+  font-size: 52px;
+  color: #000000;
+}
+#campaign_banner .left_side__content p {
+  font-size: 16px;
+  color: #545454;
+  line-height: 25px;
+}
+#campaign_banner .left_side__content a {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 1px solid #000000;
+  padding: 5px 0;
+  text-decoration: none;
+}
+#campaign_banner .left_side__content a i {
+  font-size: 18px;
+  font-weight: 200;
+}
+#campaign_banner .right_side__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+#campaign_banner .right_side__img::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(71, 68, 68);
+  transition: 0.25s;
+  z-index: 3;
+  opacity: 0.1;
+}
+#campaign_banner .right_side__img::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(71, 68, 68);
+  transition: 0.25s;
+  z-index: 3;
+  opacity: 0.1;
+}
+#campaign_banner .right_side__img:hover:before {
+  top: 0;
+}
+#campaign_banner .right_side__img:hover:after {
+  bottom: 0;
+  transition-delay: 0.25s;
 }/*# sourceMappingURL=style.css.map */
