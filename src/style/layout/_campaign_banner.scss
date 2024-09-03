@@ -3,7 +3,6 @@
     .left_side {
         @include Flexible (center,center,column,nowrap,10px);
         background-color: #E6E4DE;
-        width: 700px;
         height: 400px;
         &__content {
         @include Flexible (center,start,column,nowrap,20px);

@@ -1,0 +1,106 @@
+#categories {
+    font-family: $default_font;
+    .heading {
+        @include Flexible (flex-start,center,row,nowrap,10px);
+         .ri-arrow-drop-left-line {
+            font-size: 23px;
+            border: 1px solid #dbdbdb;
+            color: #dbdbdb;
+             width: 25px;
+            height: 25px;
+            border-radius: 100%;
+         }
+         .ri-arrow-drop-right-line {
+            font-size: 23px;
+            border: 1px solid $black_color;
+            color: $black_color ;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            cursor: pointer;
+            &:hover {
+                background-color: $black_color;
+                color: #ffffff;
+            }
+         }
+         h4 {
+            font-size: 16px;
+            color: $black_color;
+            font-weight: 700;
+         }
+    }
+    .categorie_card {
+       &__img {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+   
+        img {
+            @extend %base_img;
+            transition: 0.9s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &__name {
+            position: absolute;
+            bottom: 40px;
+            left: 15px;
+            a {
+                text-decoration: none;
+                background-color: #ffffff;
+                padding: 12px 15px;
+                border-radius: 3px;
+                color: $black_color;
+                font-size: 18px;
+                font-weight: 500;
+                transition: 0.3s ease 0.1s;
+                &:hover  {
+                    background-color: $black_color; 
+                    color: #ffffff;
+                }
+               i {
+                 font-size: 18px;
+                }
+            }
+          
+        }
+       } 
+    }
+    .discovery_card {
+        border: 1px solid $black_color;
+        width: 100%;
+        height: 350px;
+        &__blank {
+            position: relative;
+        &__content {
+            position: absolute;
+            top: 170px;
+            left: 35px;
+            h6 {
+                font-size: 28px;
+                color: $black_color;
+                line-height: 34px;
+                padding-bottom: 20px;
+            }
+            a {
+                text-decoration: none;
+                i {
+                border-radius: 100%;
+                border: 1px solid $black_color;
+                width: 50px;
+                height: 50px;
+                padding: 15px;
+                font-size: 18px;
+                color: $black_color;
+                &:hover {
+                    background-color: $black_color;
+                    color: #ffffff;
+                }
+                }
+            }
+        }
+        }
+    }
+}
