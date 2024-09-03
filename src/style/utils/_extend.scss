@@ -24,3 +24,34 @@
     top: -5px;
     left: 13px;
 }
+
+%product_img {
+    position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            transition: 0.9s ease-in-out;
+            cursor: pointer;
+}
+
+%product_img_hover {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    inset: 0;
+    transition: 0.8s ease-in-out;
+}
+
+%product_body_p {
+    font-size: 16px;
+    color: $black_color;
+    font-weight: 400;
+}
+
+%product_body_span {
+    font-size: 14px;
+    color: $black_color;
+    font-weight: 600;
+}
