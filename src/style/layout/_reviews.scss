@@ -1,0 +1,84 @@
+#reviews {
+    font-family: $default_font;
+    .review_title {
+        h2 {
+            font-size: 42px;
+            color: $black_color;
+        }
+    }
+    .review_card {
+        box-shadow: -2px 1px 20px rgba(134, 134, 134, 0.1);
+        background-color: #ffffff;
+        padding: 10px 15px;
+        width: 400px;
+         &__top{
+            @include Flexible (flex-start,start,column,nowrap,10px);
+            text-align: start;
+            &__stars {
+                @include Flexible (flex-start,center,row,nowrap,10px);
+                ul {
+                    @include Flexible (flex-start,center,row,nowrap,4px);
+                    i {
+                        font-size: 20px;
+                        color: #FF7B54;
+                    }
+                }
+            }
+            &__comment{
+                h3 {
+                    color: $black_color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 38px;
+                }
+                p {
+                    color: $black_color;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            &__customer{
+              line-height: 22px;
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $black_color;
+                }
+                span {
+                    font-size: 14px;
+                    color: #545454;
+                }
+            }
+        }
+        &__bottom {
+            text-align: start;
+            line-height: 24px;
+            @include Flexible (flex-start,center,row,nowrap,20px);
+            &__left {
+                width: 64px;
+                height: 48px;
+                img {
+                    @extend %base_img;
+                }
+            }
+            &__right {
+                color: $black_color;
+                p {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .sale {
+                    color: #DB1215;
+                    font-size:14px;
+                    .price {
+                        color: $black_color;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+}
