@@ -1,0 +1,189 @@
+#footer {
+    background-color: #F5F5F5;
+    font-family: $default_font;
+    .contact {
+        @include Flexible (flex-start,start,column,nowrap,10px);
+        .contact_top {
+            @include Flexible (flex-start,start,column,nowrap,10px);
+            p {
+                font-size: 14px;
+                color: #545454;
+                line-height: 20px;
+                
+            }
+            span {
+                font-weight: 700;
+            }
+            a {
+                color: $black_color;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                border-bottom: 1px solid $black_color;
+                padding-bottom: 5px;
+                i {
+                    font-size: 17px;
+                }
+            }
+        }
+        .contact_bottom {
+            margin-top: 10px;
+            @include Flexible (flex-start,start,row,nowrap,20px);
+            ul {
+                @include Flexible (flex-start,start,row,nowrap,10px);
+                li {
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: 35px;
+                    height: 35px;
+                    padding-top: 8px;
+                    padding-left: 8px;
+                    border-radius: 100%;
+                    border: 1px solid $black_color;
+                    transition: all .3s ease;
+                }
+                .facebook:hover {
+                    color: #3b5998;
+                    border: 1px solid #3b5998;
+                }
+                .twitter:hover {
+                    color: #00acee;
+                    border: 1px solid #00acee;
+                }
+                .instagram:hover {
+                    color: #E1306C;
+                    border: 1px solid #E1306C;
+                }
+                .tiktok:hover {
+                    color: #ff0050;
+                    border: 1px solid #ff0050;
+                }
+                .pinterest:hover {
+                    color: #E60023;
+                    border: 1px solid #E60023;
+                }
+            }
+        }
+    }
+    .information {
+        h3 {
+            font-size: 18px;
+            color: $black_color;
+            font-weight: 500;
+            padding-bottom: 30px;
+        }
+        li {
+            cursor: pointer;
+            font-size: 14px;
+            color: #545454;
+            line-height: 34px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: $black_color;
+            }
+        }
+    }
+    .subscription {
+        h3 {
+            font-size: 18px;
+            color: $black_color;
+            font-weight: 500;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 14px;
+            color: #545454;
+            line-height: 24px; 
+        }
+        .sign_up {
+            margin-top: 30px;
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 13px 13px;
+            border: 1px solid #F0F0F0;
+            border-radius: 3px;
+            input {
+                outline: none;
+                border: none;
+                font-size: 14px;
+                color: #545454;
+            }
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                background-color: $black_color;
+                color: #ffffff;
+                padding: 8px 9px;
+                border-radius: 3px;
+            }
+        }
+        .left_nav {
+            font-size: 14px;
+            color: $black_color;
+            margin-top: 30px;
+            @include Flexible (flex-start,start,row,nowrap,20px);
+            ul {
+                @include Flexible (flex-start,start,row,nowrap,20px);
+                cursor: pointer;
+                img {
+                    width: 16px;
+                    height: 12px;
+                    @extend %base_img;
+                } 
+                i {
+                    font-size: 17px;
+                }  
+                .menu_lang {
+                    position: relative;
+                    &:hover .sub_menu_lang {
+                        opacity: 1;
+                        visibility: visible; 
+    
+                    }
+                    .sub_menu_lang {
+                        position: absolute;
+                        @extend %sub_menu;
+                        @include Flexible (flex-start,start,column,nowrap,20px);
+                        width: 300px;
+                        padding: 17px 10px;
+                        left: -30px;
+                        
+                    }
+                   
+                }
+                .menu_cur {
+                    position: relative; 
+                    &:hover  .sub_menu_cur {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .sub_menu_cur {
+                        position: absolute;
+                        @extend %sub_menu;
+                        @include Flexible (flex-start,start,column,nowrap,20px);
+                        padding: 18px 15px;
+                        width: 86px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        border-top: 1px solid #F0F0F0;
+        padding-top: 20px;
+        @include Flexible (space-between,center,row,nowrap,0);
+        .left_side {
+            p {
+                font-size: 14px;
+                color: #545454;
+            }
+        }
+        .right_side {
+       .payments_img {
+                @include Flexible (center,center,row,nowrap,15px);
+         
+            }
+        }
+    }
+}
