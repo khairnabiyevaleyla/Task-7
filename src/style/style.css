@@ -1013,4 +1013,41 @@ table {
 #sale_banner .right_side__img:hover:after {
   bottom: 0;
   transition-delay: 0.25s;
+}
+#info_bar {
+  font-family: "Albert Sans", sans-serif;
+}
+#info_bar .info_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+#info_bar .info_card__icon {
+  font-size: 35px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #F0F0F0;
+  padding-left: 16px;
+  padding-top: 15px;
+}
+#info_bar .info_card__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+#info_bar .info_card__text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+#info_bar .info_card__text p {
+  font-size: 14px;
+  color: #545454;
 }/*# sourceMappingURL=style.css.map */
